@@ -1,0 +1,73 @@
+:root {
+  --color-transparent: transparent;
+  --color-paper: oklch(93.46% 0.0051 228.82);
+  --color-paper-2: oklch(97.5% 0.004 228.82);
+  --color-paper-3: oklch(89% 0.009 228.82);
+  --color-surface: oklch(99.2% 0.003 228.82);
+  --color-rule: oklch(82% 0.014 235);
+  --color-rule-2: oklch(66% 0.028 240.86);
+  --color-neutral: oklch(48% 0.035 240.86);
+  --color-muted: oklch(36% 0.047 240.86);
+  --color-ink-2: oklch(32.62% 0.0077 240.07);
+  --color-ink: oklch(27.65% 0.059 240.86);
+  --color-accent: oklch(93.22% 0.1959 121.7);
+  --color-accent-hover: oklch(88% 0.19 121.7);
+  --color-accent-ink: oklch(27.65% 0.059 240.86);
+  --color-focus: oklch(60.45% 0.2144 262);
+  --color-signal: oklch(60.45% 0.2144 262);
+  --color-violet: oklch(55.3% 0.2348 278.42);
+  --color-graphite: oklch(23% 0.05 240.86);
+  --color-graphite-2: oklch(29% 0.052 240.86);
+  --color-graphite-rule: oklch(43% 0.055 240.86);
+  --color-on-dark: oklch(97.5% 0.004 228.82);
+  --color-on-dark-muted: oklch(78% 0.025 235);
+  --color-success: oklch(72% 0.15 145);
+  --color-error: oklch(52% 0.19 27);
+  --color-overlay: oklch(16% 0.02 258 / 0.56);
+  --color-shadow: oklch(20% 0.02 258 / 0.08);
+
+  --font-display: var(--font-space-mono), ui-monospace, monospace;
+  --font-body: var(--font-inter), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.82rem;
+  --text-base: 1rem;
+  --text-md: 1.18rem;
+  --text-lg: 1.45rem;
+  --text-xl: 1.85rem;
+  --text-2xl: 2.35rem;
+  --text-display-s: clamp(2.1rem, 4vw + 0.6rem, 4rem);
+  --text-display: clamp(2.7rem, 5vw + 0.8rem, 5.2rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-round: 999px;
+  --rule-thin: 1px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+}

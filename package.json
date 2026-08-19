@@ -1,0 +1,25 @@
+{
+  "name": "geico-token-factory-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sh -c 'set -a; [ ! -f ../nebius.env ] || . ../nebius.env; [ ! -f ../tavily.env ] || . ../tavily.env; set +a; next dev'",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
