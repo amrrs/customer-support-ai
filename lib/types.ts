@@ -11,6 +11,11 @@ export type DemoSettings = {
   domain: string;
 };
 
+export type ConversationHistoryTurn = {
+  question: string;
+  answer: string;
+};
+
 export type StreamEvent =
   | { type: "triage"; sources: Source[] }
   | { type: "token"; delta: string }

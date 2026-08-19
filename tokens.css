@@ -12,6 +12,8 @@
   --color-ink: oklch(27.65% 0.059 240.86);
   --color-accent: oklch(93.22% 0.1959 121.7);
   --color-accent-hover: oklch(88% 0.19 121.7);
+  --color-accent-soft: oklch(96% 0.08 121.7);
+  --color-accent-rule: oklch(72% 0.16 121.7);
   --color-accent-ink: oklch(27.65% 0.059 240.86);
   --color-focus: oklch(60.45% 0.2144 262);
   --color-signal: oklch(60.45% 0.2144 262);
@@ -25,6 +27,7 @@
   --color-error: oklch(52% 0.19 27);
   --color-overlay: oklch(16% 0.02 258 / 0.56);
   --color-shadow: oklch(20% 0.02 258 / 0.08);
+  --shadow-whisper: 0 1px 2px var(--color-shadow);
 
   --font-display: var(--font-space-mono), ui-monospace, monospace;
   --font-body: var(--font-inter), ui-sans-serif, sans-serif;
@@ -56,6 +59,7 @@
   --radius-lg: 0.875rem;
   --radius-round: 999px;
   --rule-thin: 1px;
+  --rule-accent: 4px;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
