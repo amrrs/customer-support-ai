@@ -4,9 +4,25 @@ An enterprise demonstration of source-grounded customer support using:
 
 - Nebius Token Factory with a live model catalog
 - Tavily Search restricted to a user-configured approved domain
-- A streamed Next.js interface with approved-source citations
+- A streamed Next.js interface with conversational follow-ups and approved-source links
 
 This is an independent technical demonstration.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    U[Customer question] --> UI[Next.js chat UI]
+    UI --> API[Server API route]
+    API --> T[Tavily domain search]
+    T --> V[HTTPS and hostname validation]
+    V --> N[Nebius Token Factory]
+    N -->|Streamed Markdown answer| UI
+    V -->|Approved source links| UI
+```
+
+The API route keeps credentials out of the client bundle, carries recent session
+history for follow-ups, and sends only validated source excerpts to the model.
 
 ## Run locally
 
@@ -32,8 +48,9 @@ overrides and opens with `⌘K` or `Ctrl+K`.
 1. The server asks Tavily to search only the domain selected in Configuration.
 2. Every result URL is parsed and checked again; only that HTTPS hostname and its
    subdomains are accepted.
-3. The accepted excerpts are passed to the model with an explicit source-only prompt.
-4. The response includes bracketed source numbers and the UI shows the approved URLs.
+3. The accepted excerpts and recent conversation context are passed to the model with
+   an explicit source-only prompt.
+4. The streamed Markdown response hyperlinks claims to the approved source URLs.
 
 ## Deploy on Vercel
 
